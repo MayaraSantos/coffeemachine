@@ -25,6 +25,7 @@ public abstract class CoffeeMachineTest {
 	@Test
 	public void createFacade() {
 		createFacade(factory);
+		factory.getDisplay().info("Insert coins and select a drink!");
 		verify(display).info("Insert coins and select a drink!");
 	}
 
